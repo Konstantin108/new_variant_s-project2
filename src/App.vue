@@ -8,10 +8,17 @@
 
 <script>
   import MainLayout from '@/layouts/MainLayout'
+  import Cart from '@/components/app/Cart'
+  import CartItem from '@/components/app/CartItem'
+  import Filter from '@/components/app/Filter'
+  import Loader from '@/components/app/Loader'
+  import Navbar from '@/components/app/Navbar'
+  import Product from '@/components/app/Product'
+  import Products from '@/components/app/Products'
+
+
+
   export default {
-    data: () => ({
-    api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses'
-  }),
     computed: {
       layout() {
         console.log()
@@ -19,7 +26,7 @@
       }
     },
     components: {
-      MainLayout
+      MainLayout, Cart, CartItem, Filter, Loader, Navbar, Product, Products
     },
     methods: {
       getJson(url) {

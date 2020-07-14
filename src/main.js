@@ -6,6 +6,7 @@ import store from './store'
 import Loader from "./components/app/Loader";
 import 'materialize-css/dist/js/materialize.min'
 
+
 Vue.config.productionTip = false
 
 Vue.component('Loader', Loader)

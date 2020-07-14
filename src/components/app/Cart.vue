@@ -32,7 +32,7 @@
         },
         data() {
             return {
-                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses',
+                // api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses',
                 userSearch: '',
                 cartUrl: '/getBasket.json',
                 cartItems: [],
@@ -40,15 +40,15 @@
             }
         },
         methods: {
-            getJson(url) {
-                return fetch(url)
-                    .then(result => result.json())
-                    .catch(error => {
-                        alert('error');
-                    })
-            },
+            // getJson(url) {
+            //     return fetch(url)
+            //         .then(result => result.json())
+            //         .catch(error => {
+            //             alert('error');
+            //         })
+            // },
             addProduct(product) {
-                this.getJson(`${this.api}/addToBasket.json`)
+                this.$parent.getJson(`${this.$parent.api}/addToBasket.json`)
                     .then(data => {
                         if (data.result === 1) {
                             let find = this.cartItems.find(el => el.id_product === product.id_product);
@@ -64,7 +64,7 @@
                     })
             },
             remove(item) {
-                this.getJson(`${this.api}/deleteFromBasket.json`)
+                this.$parent.getJson(`${this.$parent.api}/deleteFromBasket.json`)
                     .then(data => {
                         if (data.result === 1) {
                             if (item.quantity > 1) {
@@ -77,7 +77,7 @@
             },
         },
         mounted() {
-            this.getJson(`${this.api}/addToBasket.json`)
+            this.$parent.getJson(`${this.$parent.api}/addToBasket.json`)
                 .then(data => {
                     for (let el of data.contents) {
                         this.cartItems.push(el);

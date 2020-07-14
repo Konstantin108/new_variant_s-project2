@@ -29,7 +29,7 @@
         data() {
             return {
                 cartAPI: this.$root.$refs.cart,
-                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses',
+                // api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses',
                 userSearch: '',
             };
         },
