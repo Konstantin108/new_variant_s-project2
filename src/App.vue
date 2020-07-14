@@ -9,6 +9,9 @@
 <script>
   import MainLayout from '@/layouts/MainLayout'
   export default {
+    data: () => ({
+    api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/homework1/responses'
+  }),
     computed: {
       layout() {
         console.log()
@@ -17,6 +20,15 @@
     },
     components: {
       MainLayout
+    },
+    methods: {
+      getJson(url) {
+        return fetch(url)
+                .then(result => result.json())
+                .catch(error => {
+                  alert('error');
+                })
+      },
     }
   }
 </script>
