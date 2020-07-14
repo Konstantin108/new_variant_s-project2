@@ -15,7 +15,6 @@
         data() {
             return {
                 userSearch: '',
-                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/homework1/responses',
             };
         },
     }

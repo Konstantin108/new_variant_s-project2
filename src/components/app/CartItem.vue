@@ -25,7 +25,6 @@
         props: ['cartItem', 'img', 'href'],
         data() {
             return {
-                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/homework1/responses',
                 userSearch: '',
             }
         },

@@ -29,7 +29,6 @@
         data() {
             return {
                 cartAPI: this.$root.$refs.cart,
-                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/homework1/responses',
                 userSearch: '',
             };
         },

@@ -23,25 +23,17 @@
                 catalogUrl: '/catalogData.json',
                 products: [],
                 filtered: [],
-                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/homework1/responses',
                 userSearch: '',
             }
         },
         methods: {
-            getJson(url) {
-                return fetch(url)
-                    .then(result => result.json())
-                    .catch(error => {
-                        alert('error');
-                    })
-            },
             filter(value) {
                 let regexp = new RegExp(value, 'i');
                 this.filtered = this.products.filter(el => regexp.test(el.product_name));
             }
         },
         mounted() {
-            this.getJson(`${this.api + this.catalogUrl}`)
+            this.$root.$ref.getJson(`${this.$root.$ref.api + this.catalogUrl}`)
                 .then(data => {
                     for (let el of data) {
                         this.products.push(el);
