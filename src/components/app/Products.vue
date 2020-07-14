@@ -23,7 +23,7 @@
                 catalogUrl: '/catalogData.json',
                 products: [],
                 filtered: [],
-                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/homework1/responses',
+                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses',
                 userSearch: '',
             }
         },

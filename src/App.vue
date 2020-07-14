@@ -10,7 +10,7 @@
   import MainLayout from '@/layouts/MainLayout'
   export default {
     data: () => ({
-    api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/homework1/responses'
+    api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses'
   }),
     computed: {
       layout() {

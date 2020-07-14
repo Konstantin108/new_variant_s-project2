@@ -23,15 +23,16 @@
 
 <script>
     import CartItem from '@/components/app/CartItem';
+    import Product from '@/components/app/Product';
 
     export default {
         name: 'cart',
         components: {
-            CartItem
+            CartItem, Product
         },
         data() {
             return {
-                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/homework1/responses',
+                api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses',
                 userSearch: '',
                 cartUrl: '/getBasket.json',
                 cartItems: [],

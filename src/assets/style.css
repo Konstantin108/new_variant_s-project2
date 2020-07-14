@@ -1407,8 +1407,6 @@ button {
 }
 
 .drop__cart {
-  left: -15px;
-  top: 60px;
   padding-top: 5px;
   background-color: #ffffff;
   border-radius: 5px;
