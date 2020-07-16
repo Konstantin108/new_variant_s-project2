@@ -1712,6 +1712,8 @@ button {
 
 .featured__photo {
   transition: 0.9s;
+  width: 200px;
+  height: 200px;
 }
 
 .left_menu_list {
