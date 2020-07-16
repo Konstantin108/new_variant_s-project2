@@ -5,7 +5,6 @@
         <input type="text" class="text_search" v-model="userSearch" placeholder="Search for item...">
         <button class="search_button" type="submit">
             <img src="../../assets/img/search_image.png" alt="search_image">
-            
         </button>
     </form>
 </template>
