@@ -9,7 +9,7 @@
     "product_link": "single_page.html"
   },
   {
-    "product_img": "img/product_content2.jpg",
+    "product_img": "../../assets/img/product_content2.jpg",
     "id_product": 12,
     "product_name": "Embroidered cotton blouse",
     "price": 55,
@@ -18,7 +18,7 @@
     "product_link":  "single_page2.html"
   },
   {
-    "product_img": "img/product_content3.jpg",
+    "product_img": "../../../img/product_content3.jpg",
     "id_product": 13,
     "product_name": "Metallic knit top",
     "price": 52,
@@ -27,7 +27,7 @@
     "product_link":  "single_page3.html"
   },
   {
-    "product_img": "img/product_content4.jpg",
+    "product_img": "../img/product_content4.jpg",
     "id_product": 14,
     "product_name": "Fringes details cotton t-shirt",
     "price": 89,
