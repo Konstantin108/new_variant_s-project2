@@ -29,7 +29,7 @@
             //------------------------------вот тут ошибка!!!!!!!!----------------------------
             return {
                 cartAPI: this.$root.$refs.cart,
-                api: 'https://raw.githubusercontent.com/Konstantin108/new_variant_s-project2/last_try/responses',
+                api: '',
                 userSearch: '',
             };
         },

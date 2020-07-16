@@ -27,7 +27,7 @@
         props: ['cartItem', 'img', 'href'],
         data() {
             return {
-                api: 'https://raw.githubusercontent.com/Konstantin108/new_variant_s-project2/last_try/responses',
+                api: '',
                 userSearch: '',
             }
         },
