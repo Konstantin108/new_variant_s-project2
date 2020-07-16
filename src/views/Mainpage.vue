@@ -37,7 +37,9 @@
         <h3 class="fetured__title">Fetured Items</h3>
         <p class="fetured__text">Shop for items based on what we featured in this week</p>
         <div class="blocks__position_featured center">
-        <products-currency></products-currency>
+            <cart ref="cart"></cart>
+            <filter-el/>
+            <products ref="products"></products>
 
 
 <!--            <div class="featured_link">-->
@@ -209,8 +211,11 @@
     </div>
 </template>
 <script>
-    import ProductsCurrency from "../components/app/ProductsCurrency";
+    import Products from "../components/app/Products";
+    import Cart from "../components/app/Cart";
+    import Filter from "../components/app/Filter";
+    import FilterEl from "../components/app/Filter";
     export default {
-        components: {ProductsCurrency}
+        components: {FilterEl, Products, Cart, Filter}
     }
 </script>

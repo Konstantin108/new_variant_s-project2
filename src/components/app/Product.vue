@@ -13,12 +13,26 @@
                 <p class="featured_text2">${{product.price}}</p>
             </a>
         </div>
-        <div class="small-red-block">Product</div>
     </div>
 </template>
 
 <script>
+    import Cart from '@/components/app/Cart';
+
     export default {
         name: 'product',
+        props: ['product', 'img', 'href'],
+        components: {
+            Cart
+        },
+        data() {
+            //------------------------------вот тут ошибка!!!!!!!!----------------------------
+            return {
+                cartAPI: this.$root.$refs.cart,
+                api: 'https://raw.githubusercontent.com/Konstantin108/new_variant_s-project2/last_try/responses',
+                userSearch: '',
+            };
+        },
+    //--------------------------------------------------------------------------------------------------------
     }
 </script>

@@ -451,23 +451,10 @@ a {
   margin-bottom: 60px;
 }
 
-.small-red-block {
-  width: 60px;
-  height: 60px;
-  background-color: red;
-}
-
 .app-loader {
   text-align: center;
   color: red;
   font-size: 30px;
-}
-
-.big-black-block {
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  color: white;
 }
 
 .blocks__position_featured {
@@ -1407,8 +1394,6 @@ button {
 }
 
 .drop__cart {
-  left: -15px;
-  top: 60px;
   padding-top: 5px;
   background-color: #ffffff;
   border-radius: 5px;
