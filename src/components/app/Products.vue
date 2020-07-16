@@ -22,6 +22,7 @@
                 catalogUrl: '/catalogData.json',
                 products: [],
                 filtered: [],
+
                 api: 'https://raw.githubusercontent.com/Konstantin108/new_variant_s-project2/last_try/responses',
                 userSearch: '',
             }
