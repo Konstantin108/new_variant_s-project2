@@ -44,60 +44,12 @@
                                 </div>
                             </div>
                         </details>
-                        <input type="text" class="text_search" placeholder="Search for item...">
-                        <button class="search_button"><img src="../assets/img/search_image.png" alt="search_image"></button>
+                        <filter-el></filter-el>
                     </form>
                 </div>
                 <div class="header__right">
-
-                    <ul>
-                        <li class="cart_summary"><a href="/shoppingcart"><img class="header__cart" src="../assets/img/cart.svg"
-                                                                                   alt="cart"></a>
-                            <div class="drop__cart">
-                                <div class="drop__flex">
-                                    <ul class="drop__il">
-                                        <li class="drop__list drop__list_cart">
-                                            <div class="cart__content">
-                                                <a href="/singlepage" class="drop__link cart__product">
-                                                    <div class="cart__image__content content__1"></div>
-                                                    <div class="cart__text_content">
-                                                        <p class="cart__text_1">Rebox Zane</p> <img src="../assets/img/stars.png"
-                                                                                                    alt="stars"
-                                                                                                    class="stars">
-                                                        <p class="cart__price_2">1 x $250</p>
-                                                    </div>
-                                                </a> <a href="#" class="delete_cart_item"><i
-                                                    class="fas fa-times-circle"></i></a>
-                                            </div>
-                                        </li>
-                                        <li class="drop__list drop__list_cart">
-                                            <div class="cart__content">
-                                                <a href="/singlepage" class="drop__link cart__product">
-                                                    <div class="cart__image__content content__2"></div>
-                                                    <div class="cart__text_content">
-                                                        <p class="cart__text_1">Rebox Zane</p> <img src="../assets/img/stars.png"
-                                                                                                    alt="stars"
-                                                                                                    class="stars">
-                                                        <p class="cart__price_2">1 x $250</p>
-                                                    </div>
-                                                </a> <a href="#" class="delete_cart_item"><i
-                                                    class="fas fa-times-circle"></i></a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="total">
-                                        <p class="text__total">total</p>
-                                        <p class="summ">$500.00</p>
-                                    </div>
-                                    <a href="/checkout" class="cart__button_sub">Checkout</a>
-                                    <a href="/shoppingcart" class="cart__button_sub last__button">Go to cart</a>
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a href="#" class="button">My accaunt<img src="../assets/img/white_arrow.png" alt="white_arrow"
+                    <cart ref="cart"></cart>
+                    <a href="#" class="button">My accaunt<img src="img/white_arrow.png" alt="white_arrow"
                                                               class="white_arrow"></a>
                 </div>
             </header>
@@ -198,11 +150,14 @@
 
 <script>
     import Navbar from '@/components/app/Navbar';
+    import Cart from '../components/app/Cart';
+    import FilterEl from '../components/app/Filter';
 
     export default {
         name: 'main-layout',
         components: {
-            Navbar
+            FilterEl,
+            Navbar, Cart
         }
     }
 </script>
