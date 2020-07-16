@@ -32,7 +32,7 @@
         },
         data() {
             return {
-                api: '',
+                api: 'https://raw.githubusercontent.com/Konstantin108/new_variant_s-project2/last_try/responses',
                 userSearch: '',
                 cartUrl: '/getBasket.json',
                 cartItems: [],
