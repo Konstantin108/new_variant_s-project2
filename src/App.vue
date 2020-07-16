@@ -10,7 +10,7 @@
   import MainLayout from '@/layouts/MainLayout'
   export default {
     data: () => ({
-    api: ''
+    api: 'https://raw.githubusercontent.com/Konstantin108/new_variant_s-project2/last_try/responses'
   }),
     computed: {
       layout() {
