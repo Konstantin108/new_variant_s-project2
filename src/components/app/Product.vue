@@ -13,7 +13,6 @@
                 <p class="featured_text2">${{product.price}}</p>
             </a>
         </div>
-        <div class="small-red-block">Product</div>
     </div>
 </template>
 
@@ -27,7 +26,7 @@
             Cart
         },
         data() {
-            //-------------------------------------------------------вот тут ощибка!!!!!!!!-----------------------------
+            //------------------------------вот тут ошибка!!!!!!!!----------------------------
             return {
                 cartAPI: this.$root.$refs.cart,
                 api: 'https://raw.githubusercontent.com/Konstantin108/Vue-store-project/try_make_btn_clearall/responses',

@@ -6,7 +6,6 @@
                  :href="item.product_link"
                  :product="item">
         </product>
-        <div class="big-black-block">Products</div>
     </div>
 </template>
 
