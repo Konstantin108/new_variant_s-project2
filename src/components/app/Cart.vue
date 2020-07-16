@@ -3,7 +3,7 @@
         <button class="cart_summary"
                 type="button"
                 @click="showCart = !showCart">
-            <img class="header__cart" src="img/cart.svg" alt="cart">
+            <img class="header__cart" src="../../assets/img/cart.svg" alt="cart">
         </button>
         <div class="drop__cart" v-show="showCart">
             <p v-if="!cartItems.length">Корзина пуста</p>
@@ -32,7 +32,7 @@
         },
         data() {
             return {
-                api: 'https://raw.githubusercontent.com/Konstantin108/new_variant_s-project2/last_try/responses',
+                api: '',
                 userSearch: '',
                 cartUrl: '/getBasket.json',
                 cartItems: [],

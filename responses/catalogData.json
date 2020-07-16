@@ -36,7 +36,7 @@
     "product_link":  "single_page4.html"
   },
   {
-    "product_img": "img/product_content5.jpg",
+    "product_img": "/../../../img/product_content5.jpg",
     "id_product": 15,
     "product_name": "V-neckline essential t-shirt",
     "price": 89,
@@ -45,7 +45,7 @@
     "product_link":  "single_page5.html"
   },
   {
-    "product_img": "img/product_content6.jpg",
+    "product_img": "/../img/product_content6.jpg",
     "id_product": 16,
     "product_name": "Crew neckline blouse",
     "price": 129,
@@ -54,7 +54,7 @@
     "product_link":  "single_page6.html"
   },
   {
-    "product_img": "img/product_content7.jpg",
+    "product_img": "/../../img/product_content7.jpg",
     "id_product": 17,
     "product_name": "Basic t-shirt",
     "price": 56,

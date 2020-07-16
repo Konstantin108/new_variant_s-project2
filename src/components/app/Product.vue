@@ -4,7 +4,7 @@
             <div class="block__self1">
                 <img :src="img" alt="photo" class="featured__photo">
                 <div class="cart__hover" @click="cartAPI.addProduct(product)">
-                    <img src="img/cart_hover.svg" alt="cart_hover_img" class="cart_hover_img">
+                    <img src="../../assets/img/cart_hover.svg" alt="cart_hover_img" class="cart_hover_img">
                     Add to Cart
                 </div>
             </div>
@@ -29,7 +29,7 @@
             //------------------------------вот тут ошибка!!!!!!!!----------------------------
             return {
                 cartAPI: this.$root.$refs.cart,
-                api: 'https://raw.githubusercontent.com/Konstantin108/new_variant_s-project2/last_try/responses',
+                api: '',
                 userSearch: '',
             };
         },
